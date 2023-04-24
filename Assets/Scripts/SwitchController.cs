@@ -16,6 +16,9 @@ public class SwitchController : MonoBehaviour
     public Material offMaterial;
     public Material onMaterial;
 
+    public AudioManager audioManager;
+    public VFXManager VFXManager;
+
     private SwitchState state;
     private Renderer renderer;
 
@@ -66,6 +69,9 @@ public class SwitchController : MonoBehaviour
             renderer.material = onMaterial;
 
             StopAllCoroutines();
+
+            audioManager.PlaySFX(transform.position, "Switch");
+            VFXManager.PlayVFX(transform.position, "Switch");
         }
         else
         {
