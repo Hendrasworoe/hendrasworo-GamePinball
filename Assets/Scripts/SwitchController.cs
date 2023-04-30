@@ -18,6 +18,8 @@ public class SwitchController : MonoBehaviour
 
     public AudioManager audioManager;
     public VFXManager VFXManager;
+    public ScoreManager scoreManager;
+    public float score;
 
     private SwitchState state;
     private Renderer renderer;
@@ -92,5 +94,7 @@ public class SwitchController : MonoBehaviour
         {
             Set(true);
         }
+
+        scoreManager.AddScore(score);
     }
 }

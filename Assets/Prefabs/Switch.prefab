@@ -114,3 +114,7 @@ MonoBehaviour:
   bola: {fileID: 0}
   offMaterial: {fileID: 2100000, guid: e80417eb425305045bbea2dd1cba6c4a, type: 2}
   onMaterial: {fileID: 2100000, guid: d07cd7f0c870ca84da6f27a194145119, type: 2}
+  audioManager: {fileID: 0}
+  VFXManager: {fileID: 0}
+  scoreManager: {fileID: 0}
+  score: 5
